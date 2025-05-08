@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/image logo.jpg" alt="Logo" style="height: 50px; width: 50px; vertical-align: middle; margin-right: 10px;">
+            Local Kenyan Bag Shop
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#Home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a></li>
+            <li><a href="#Location"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+            <li><a href="#Mission"><i class="fas fa-bullseye"></i> Mission</a></li>
+            <li><a href="#Contact"><i class="fas fa-envelope"></i> Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
+
+<section class="hero">
+    <video autoplay muted loop class="background-video">
+        <source src="/Background .jpg" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h1 id="animated-text">Discover Your Perfect Handcrafted Bags with Kenyan Soul</h1>
+        <a href="products.html" class="hero-button">Explore Products</a>
+    </div>
+</section>
+<form class="search-bar" action="#Search" method="get" style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+    <input type="text" name="search" placeholder="Search..." aria-label="Search" size="10" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px;">
+    <button type="submit" style="padding: 10px 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Search</button>
+</form>
+
+<body>
+    <h2>Modal Signup Form</h2>  
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+    
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+<body>
+  
+        </nav>
+    </header>
+    <section id="Home" class="Home">
+        <div class="grid-container">
+            <h2>Home</h2>
+            <div class="Home-content">
+                <p> Explore our unique collection of handcrafted leather and sustainable material bags, designed with passion in Nairobi. From everyday elegance to adventurous travel, find a bag that tells your story.</p>
+        </div>
+    </section>
+    <main class="container">
+       
+        <div class="content">
+    <h1>Visit Our Shop</h1>
+    <div class="image-column">
+        <div class="image-gallery">
+            
+            <img src="/11.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <p> Visit our shop for more and affordable bags</p>
+            <img src="/12.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <img src="/13.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <img src="/14.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <img src="/15.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <img src="/Image 1.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <p>Explore our unique collection of handcrafted bags</p>
+            <img src="/Bag video 1.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <img src="/laptop bag.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <img src="/21.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <img src="/20.jpg" alt="Welcome" class="image-column-img" height="200" width="200">
+            <p>Visit our store for unique collection of handcrafted bags</p>
+        </div>
+    </div>
+   <video controls width="800" height="400" autoplay muted loop style="display: block; margin: 0 auto;">
+        <source src="/httpswwwyoutubecomwatchv7oh7wxirxls.mp4" type="video/mp4">
+    </video>
+    <p>Choose DIFFERENT hair color and styles every day with us</p>
+</div>
+        
+            <section id="Location" class="Location">
+                <div class="container">
+                    <h2>Location</h2>
+                    <div class="Location-content">
+                        <address>
+                            <strong>My Beauty Store</strong><br>
+                            Serova Main Street<br>
+                            Nairobi, Nairobi County<br>
+                            Kenya
+                        </address>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317713.123456789!2d36.821946!3d-1.292066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTWFpbiBTdHJlZXQsIE5haXJvYmksIEtlbnlh!5e0!3m2!1sen!2s!4v1234567890123" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+                <section id="Mission" class="Mission">
+                    <div class="container">
+                        <h2>Mission</h2>
+                        <div class="Mission">
+                            <p>A concise and engaging section introducing the brand's values, philosophy, and what makes it unique. </p>
+                            <p>Focus on the "why" behind the brand and connect with the audience on unique level.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="Contact" class="Contact">
+                    <div class="container">
+                        <h2>Contact Me</h2>
+                        <form action="mailto:protasjunior254@gmail.com" method="post" enctype="text/plain">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Local Kenyan Bag Shop. All rights reserved.</p>
+            <div class="info">
+                <p><strong>Phone:</strong> 0701170939</p>
+                <p><strong>Email:</strong> malelaemmanuel6@gmail.com</p>
+            </div>
+            <div class="social-links">
+                <p>Connect with us:</p>
+                <a href="https://wa.me/254701170939" target="_blank">WhatsApp</a>
+                <a href="https://www.instagram.com/male_la1?igsh=azg0OGsxYWplaWp0" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
